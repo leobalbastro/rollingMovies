@@ -43,9 +43,7 @@ body {
 }
 
 /* ===== INICIO MANEJAR VISIBILIDAD DE PANEL LATERAL IZQUIERDO ===== */
-.container-panel-lateral-expandido {
-	/* display: block; */
-}
+
 
 .contenedor-head-titulo-panel {
 	width: 15px;
@@ -156,9 +154,7 @@ thead tr th {
 			font-size: 0.8rem;
 		}
 
-		.container-panel-derecho {
-			/* padding: 100px; */
-		}
+
 
 		.separador {
 			border-bottom: 10px solid rgb(239, 174, 174) !important;
@@ -321,5 +317,6 @@ thead tr th {
 			padding-top: 10px;
 		}
 	}
+}
 
-	/*FOOTER*/
+/* FOOTER */
