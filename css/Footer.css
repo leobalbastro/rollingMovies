@@ -178,10 +178,12 @@ a {
 	.FooterSeccion {
 		margin: 1rem;
 	}
+
 	.buttonclass {
 		margin: 0 !important;
 		width: 3.4rem;
 	}
+
 	.FooterSeccion a {
 		font-size: 11px;
 	}
@@ -198,6 +200,7 @@ a {
 		padding-top: 10px;
 	}
 }
+
 /*FOOTER*/
 .Navbar {
 	display: flex;
@@ -324,6 +327,7 @@ a {
 		margin-bottom: 10px;
 	}
 }
+
 /* PAGINA PRINCIPAL */
 .SlideButton {
 	border: 0;
@@ -406,9 +410,3 @@ a {
 	font-family: 'Roboto', sans-serif;
 	margin-top: 0px;
 }
-/*@media screen and (max-width: 768px) {
-	.MovieCards {
-		flex-wrap: nowrap !important;
-	}
-}
-*/
