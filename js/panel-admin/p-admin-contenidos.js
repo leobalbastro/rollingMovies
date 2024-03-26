@@ -9,7 +9,7 @@ const tabla = document.querySelector('#tabla');
 const btnVolver = document.getElementById('btn-volver');
 const submitAgregarContenido = document.getElementById('formularioAdminContenido');
 const formularioEditarContenido = document.getElementById('formularioEditarContenido');
-let allMovies = JSON.parse(localStorage.getItem('movies')) || [];
+let allMovies = JSON.parse(localStorage.getItem('movies')) || movies;
 
 class ContenidoStreaming {
   constructor(id, nombre, categoria, descripcion, urlImagen, urlVideo, isPublicado, isDestacado) {
@@ -24,7 +24,7 @@ class ContenidoStreaming {
   }
 }
 
-console.log(titulo.textContent);
+// console.log(titulo.textContent);
 
 // dropItem.addEventListener('click', (event) => {
 //   event.preventDefault();
@@ -68,9 +68,8 @@ function cargarContenido() {
                     width="60px"
                   />
                 </td>
-                <td data-table="URL Video" class="border"><span class="d-inline-block text-truncate" style="width: 150px">${
-                  movie.urlVideo
-                }</span></td>
+                <td data-table="URL Video" class="border"><span class="d-inline-block text-truncate" style="width: 150px">${movie.urlVideo
+      }</span></td>
                 <td data-table="Publicado" class="border">
                   <div class="d-flex justify-content-end form-check form-switch">
                     <input
@@ -99,19 +98,16 @@ function cargarContenido() {
                       onclick="handleModalEditarMovie(${movie.id})">
                         <i class="fa-solid fa-pen-to-square"></i>
                     </button>
-                    <button type="button" class="btn btn-secondary btn-sm fs-6 btn-destacar" onclick="destacarMovie(${
-                      movie.id
-                    })">
-                    ${
-                      movie.isDestacado
-                        ? `<i id="icono-destacado-${movie.id}" class="fa-solid fa-star contenido-destacado"></i>`
-                        : `<i id="icono-destacado-${movie.id}" class="fa-solid fa-star contenido-no-destacado"></i>`
-                    }
+                    <button type="button" class="btn btn-secondary btn-sm fs-6 btn-destacar" onclick="destacarMovie(${movie.id
+      })">
+                    ${movie.isDestacado
+        ? `<i id="icono-destacado-${movie.id}" class="fa-solid fa-star contenido-destacado"></i>`
+        : `<i id="icono-destacado-${movie.id}" class="fa-solid fa-star contenido-no-destacado"></i>`
+      }
                       
                     </button>
-                    <button type="button" class="btn btn-danger btn-sm fs-6" onclick="eliminarContenido(${
-                      movie.id
-                    })"><i class="fa-solid fa-trash-can"></i></button>
+                    <button type="button" class="btn btn-danger btn-sm fs-6" onclick="eliminarContenido(${movie.id
+      })"><i class="fa-solid fa-trash-can"></i></button>
                   </div>
                 </td>`;
     tablaContenido.appendChild(tr);
