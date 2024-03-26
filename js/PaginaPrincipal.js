@@ -20,6 +20,117 @@ if (localStorage.getItem('userLogged') !== undefined) {
 		}
 	}
 };
+let movies = [{
+	id: "1711164302393",
+	nombre: "Interstellar",
+	categoria: "Sci Fi",
+	descripcion: "Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar una nueva vida allí. La Tierra está llegando a su fin y este grupo necesita encontrar un planeta más allá de nuestra galaxia que garantice el futuro de la raza humana.",
+	urlImagen: "../../assets/img/Interstellar.png",
+	urlVideo: "https://www.youtube.com/watch?v=1TfbWbTBSHo",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711182312629",
+	nombre: "Breaking-Bad",
+	categoria: "Accion",
+	descripcion: "Un profesor de Química de secundaria con cáncer terminal se asocia a un exestudiante para asegurar el futuro de su familia al fabricar y vender metanfetamina",
+	urlImagen: "../../assets/img/Breaking-Bad.png",
+	urlVideo: "https://www.youtube.com/watch?v=mXd1zTwcQ18",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711184041174",
+	nombre: "Scarface",
+	categoria: "Crimen",
+	descripcion: "Tony Montana es un emigrante cubano frío y sanguinario que se instala en Miami con el propósito de convertirse en un gángster importante. Con la colaboración de su amigo Manny Rivera inicia una fulgurante carrera delictiva con el objetivo de acceder a la cúpula de una organización de narcos.",
+	urlImagen: "../../assets/img/Scarface.png",
+	urlVideo: "https://www.youtube.com/watch?v=bypNxoc7uM0",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711185328718",
+	nombre: "BayWatch",
+	categoria: "Comedia",
+	descripcion: "El socorrista Mitch Buchannon, un héroe para todos los habituales de la playa de Emerald Bay, se ve obligado a aceptar a un nuevo miembro en su equipo: el insolente y poco disciplinado nadador olímpico Matt Brody.",
+	urlImagen: "../../assets/img/BayWatch.png",
+	urlVideo: "https://www.youtube.com/watch?v=ZUvxMRm6rEo",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711186083129",
+	nombre: "Espia y medio",
+	categoria: "Comedia",
+	descripcion: "El socorrista Mitch Buchannon, un héroe para todos los habituales de la playa de Emerald Bay, se ve obligado a aceptar a un nuevo miembro en su equipo: el insolente y poco disciplinado nadador olímpico Matt Brody.",
+	urlImagen: "../../assets/img/Espia%20y%20medio.png",
+	urlVideo: "https://www.youtube.com/watch?v=7GLPHJU8uaM",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711186173993",
+	nombre: "jack y jill",
+	categoria: "Comedia",
+	descripcion: "Un padre de familia llamado Jack debe enfrentarse a un enorme problema: la llegada por Navidad de su odiada hermana Jill. La visita se alarga más de la cuenta, lo que les obligará a limar asperezas.",
+	urlImagen: "../../assets/img/jack y jill.png",
+	urlVideo: "https://www.youtube.com/watch?v=ESOA6SW3lRA",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711186352534",
+	nombre: "kickass",
+	categoria: "Comedia",
+	descripcion: "Dave un estudiante de instituto aficionado a los cómics y que siempre pasa desapercibido, decide un día convertirse en superhéroe aunque no tenga superpoderes, no haya seguido un duro entrenamiento y ni siquiera tenga una significativa razón para ello.",
+	urlImagen: "../../assets/img/kickass.png",
+	urlVideo: "https://www.youtube.com/watch?v=jpouBsIVlII",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711186473726",
+	nombre: "malditos vecinos",
+	categoria: "Comedia",
+	descripcion: "Mac y Kelly acaban de tener una niña adorable y se han comprado una preciosa casa en las afueras. Pero estos exjuerguistas descubren de pronto que sus nuevos vecinos son los miembros de la fraternidad Delta Psi Beta, con el presidente Teddy Sanders.",
+	urlImagen: "../../assets/img/malditos vecinos.png",
+	urlVideo: "https://www.youtube.com/watch?v=iNMj0dc1og4",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711186595404",
+	nombre: "son como niños",
+	categoria: "Comedia",
+	descripcion: "La muerte de su entrenador de baloncesto durante su infancia provoca la reunión de algunos viejos amigos, quienes se ven en el lugar en el que celebraron un campeonato años atrás. Los compañeros hablan sobre sus esposas y sus hijos, y descubren que la edad no necesariamente va de la mano con la madurez.",
+	urlImagen: "../../assets/img/son como niños.png",
+	urlVideo: "https://www.youtube.com/watch?v=yMEDiKD7cyE",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711186654289",
+	nombre: "vacaciones",
+	categoria: "Comedia",
+	descripcion: "Siguiendo las huellas de su padre y con la esperanza de construir ese vínculo familiar que tanto ansía, un Rusty Griswold ya mayor decide dar una sorpresa a su mujer y a sus dos hijos con un viaje: atravesar el país hasta llegar al parque de atracciones favorito de las familias estadounidenses, Walley World.",
+	urlImagen: "../../assets/img/vacaciones.png",
+	urlVideo: "https://www.youtube.com/watch?v=OIVp2F9uoRI",
+	isPublicado: false,
+	isDestacado: false
+},
+{
+	id: "1711187320476",
+	nombre: "Ted",
+	categoria: "Comedia",
+	descripcion: "John Bennett y su oso de peluche Ted han sido siempre inseparables, pero su amistad se pondrá a prueba cuando Lori, la novia de John de cuatro años, pida más de su relación.",
+	urlImagen: "../../../assets/img/Ted.png",
+	urlVideo: "https://www.youtube.com/watch?v=ukWF-N3hVfc",
+	isPublicado: false,
+	isDestacado: false
+}]
+localStorage.setItem('movies', JSON.stringify(movies));
 
 
 
